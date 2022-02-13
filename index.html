@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nav XP Farm</title>
+    <script src="messageHandler.js"></script>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap");
+
+    body{
+      background-color: #121212;
+    }
+    input{
+      margin-bottom: 10px;
+      border: none;
+      background-color: #181819;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 5px;
+      color: white;
+      font-family: 'Karla';
+      height: 25px;
+      width:100%;
+	  margin-top: 5px;
+    }
+    .main{
+padding: 20px;
+margin: 1%;
+background-color: #161617;
+border-radius: 10px;
+font-family: 'Karla';
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+color: white;
+
+    }
+
+    button{
+      border: none;
+      border-radius: 7.5px;
+      font-family: 'Karla';
+      background-color: #57F287;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      padding: 10px;
+      cursor: pointer;
+    }
+    button:hover{
+      background-color: #40ad62;
+    }
+  </style>
+  <body>
+    <div class="main">
+      <div style="float: right;">
+        <img id="pfp" style="border-radius: 50%; width: 40px; height: 40px; vertical-align: middle;">
+        <label id="username" style="margin-left: 5px;">Not logged in!</label>
+            </div><br>
+      <h2>Nav XP Farm</h2>
+      <p>Average 200-500 XP per 5 minutes</p>
+      <label for="token">Token: </label><br>
+      <input name="token" id="token" type="password"><br>
+<label for="channelid">Channel ID: </label><br>
+<input name="channelid" id="channelid" type="text"><br>
+<button onclick="start()" id="start">Start</button><br><br>
+<label id="stats">Stats will show up here.</label><br>
+    </div>
+  </body>
+</html>
